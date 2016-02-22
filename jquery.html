@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(function(){
+            var name =$('#name');
+            var greeting = $('#greeting')
+
+            name.keyup(function(){
+
+                greeting.text('Hola ' + name.val() + '!');
+
+            })
+
+        })
+
+    </script>
+    <meta charset="UTF-8">
+    <title>Seminario 1</title>
+</head>
+<body>
+    <input id="name" type="text">
+    <h2 id="greeting"></h2>
+
+</body>
+</html>
